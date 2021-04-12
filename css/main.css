@@ -5,28 +5,11 @@
 }
 
 body {
-  background: #444;
-  color: #fff;
+  color: #293241;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
-}
-
-body#bg-img {
-  background: url(../img/background.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-body#bg-img .overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: rgba(68, 68, 68, 0.9);
 }
 
 h1,
@@ -53,27 +36,30 @@ h3.sm-heading {
 }
 
 a {
-  color: black;
+  color: #fff;
   text-decoration: none;
 }
 
 header {
-  padding: 30px;
-  background: white;
+  background: #173f5f;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-.menu-nav {
+.navbar {
+  width: 30rem;
+  padding: 22px;
+  list-style: none;
+  float: right;
   display: flex;
-  align-items: center;
-  justify-content: right;
+  margin-right: 40px;
+  justify-content: space-between;
 }
 
 .text-secondary {
-  color: #eece1a;
+  color: #293241;
 }
 
 main {
@@ -92,7 +78,7 @@ main .icons a {
 }
 
 main .icons a:hover {
-  color: #eece1a;
+  color: #293241;
   transition: all 0.5s ease-out;
 }
 
@@ -105,7 +91,7 @@ main#home h1 {
 }
 
 .hero-inner {
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -113,6 +99,7 @@ main#home h1 {
   align-items: center;
   font-family: "Playfair Display",serif;
   text-align: left;
+  background: #fff;
 }
 
 @media screen and (max-width: 768px) {

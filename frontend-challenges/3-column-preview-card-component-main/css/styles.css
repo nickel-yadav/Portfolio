@@ -82,3 +82,9 @@ svg {
     color: #00403f;
 }
 
+.attribution {
+    font-family: 'Questrial', sans-serif;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

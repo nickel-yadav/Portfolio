@@ -7,9 +7,7 @@
 }
 
 body {
-  background: $primary-color;
-  @include background;
-  color: set-text-color($primary-color);
+  color: $primary-text;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -36,29 +34,30 @@ h3 {
 }
 
 a {
-  color: black;
+  color: #fff;
   text-decoration: none;
 }
 
 header {
-  padding: 30px;
-  background: white;
+  background: $primary-color;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-.menu-nav {
+.navbar {
+  width: 30rem;
+  padding: 22px;
+  list-style: none;
+  float: right;
   display: flex;
-  align-items: center;
-  justify-content: right;
-
- 
+  margin-right: 40px; 
+  justify-content: space-between;
 }
 
 .text-secondary {
-  color: $secondary-color;
+  color: $primary-text;
 }
 
 main {
@@ -75,7 +74,7 @@ main {
       padding: 0.4rem;
 
       &:hover {
-        color: $secondary-color;
+        color: $primary-text;
         @include easeOut();
       }
     }
@@ -90,7 +89,7 @@ main {
 }
 
 .hero-inner {
- width: 100vh;
+ width: 100vw;
  height: 100vh;
  display: flex;
  flex-direction: column;
@@ -98,6 +97,7 @@ main {
  align-items: center;
  font-family: "Playfair Display",serif;
  text-align: left;
+ background: #fff;
 }
 
 

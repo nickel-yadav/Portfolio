@@ -7,7 +7,7 @@
 }
 
 body {
-  color: $primary-text;
+  color: black;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -26,7 +26,7 @@ h3 {
 
   &.sm-heading {
     font-family: "Noto Sans",sans-serif;
-    line-height: 1.5;
+    line-height: 0.5;
     font-size: 2rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
@@ -38,68 +38,54 @@ a {
   text-decoration: none;
 }
 
-header {
-  background: $primary-color;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+main {
+  //  height: 100%;
+   min-height: calc(100vh - 60px);
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
 }
 
 .navbar {
+  background-color: $secondary-color;
+  color: #fff;
   width: 30rem;
   padding: 22px;
   list-style: none;
-  float: right;
+  position: absolute;
+  right: 35%;
+  top: 20px; 
   display: flex;
-  margin-right: 40px; 
   justify-content: space-between;
+  font-size: 1.2rem;
 }
 
 .text-secondary {
-  color: $primary-text;
+  color: $secondary-color;
 }
 
-main {
-  padding: 4rem;
-  margin-top: 45px;
-  //  height: 100%;
-  min-height: calc(100vh - 60px);
-
-  .icons {
-    position: fixed;
-    top: 0; 
-    
-    a {
-      padding: 0.4rem;
-
-      &:hover {
-        color: $primary-text;
-        @include easeOut();
-      }
-    }
-  }
-
-  &#home {
-    overflow: hidden;
-    h1 {
-      margin-top: 20vh;
-    }
-  }
+.hero-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  background: $secondary-color;
 }
 
 .hero-inner {
- width: 100vw;
- height: 100vh;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- font-family: "Playfair Display",serif;
- text-align: left;
- background: #fff;
+  color: #fff;
+  padding: 35px;
+  margin-top: 10rem;
 }
 
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+}
 
 
 @import "mobile";

@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*-------------- Typography-------------*/
 h2 {
     font-family: 'Bebas Neue', cursive;
     font-size: 40px;
@@ -22,6 +23,7 @@ p {
     opacity: 0.8;
 }
 
+/*---------------Buttons----------------*/
 button {
     padding: 15px 30px;
     border-radius: 50px;
@@ -32,6 +34,7 @@ button {
     background-color: white;
 }
 
+/*---------------Vector Graphics-------------*/
 svg {
     position: relative;
     top: 45px;
@@ -39,7 +42,9 @@ svg {
 }
 
 
+/*--------------Card container---------------*/
 .container {
+    flex: 1 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -51,14 +56,15 @@ svg {
     overflow: hidden;
 }
 
+
+/*----------------Card item typography--------------*/
 .item {
     color: #fff;
     text-align: left;
     font-family: 'Bebas Neue', cursive;
 }
 
-
-
+/*--------------Card item styling-----------*/
 .sedans {
     background-color: #e28525;
 }
@@ -83,6 +89,7 @@ svg {
     color: #00403f;
 }
 
+/*---------Attribution to the source of challenge------------*/
 .attribution {
     font-family: 'Questrial', sans-serif;
     position: fixed;
@@ -90,14 +97,30 @@ svg {
     right: 0;
 }
 
+/*---------------Responsive mobile styling-------------*/
 
 @media (max-width: 790px) {
+      
     .container {
-        height: 790px;
+        height: 85rem ;
+        width: 90vw;
+        margin-top: 28rem;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
-    
+    .item {
+        flex-grow: 1;
+    }
+
+    .attribution {
+        height: 2rem;
+        padding: 2px;
+        margin-bottom: 2px;
+        position: absolute;
+        top: 92rem;
+    }
 }
  

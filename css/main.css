@@ -26,13 +26,9 @@ textarea {
 }
 
 a {
-  color: #293241;
+  color: #9f496e;
   text-decoration: none;
   font-weight: 400;
-}
-
-main {
-  min-height: calc(100vh - 60px);
 }
 
 ul {
@@ -132,7 +128,7 @@ ul {
 
 .stack-container {
   width: 84vw;
-  height: 100vh;
+  height: 120vh;
   margin-left: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,8 +163,46 @@ ul {
   padding-bottom: 1rem;
 }
 
-.project {
-  border: 2px solid red;
+.project-container {
+  padding: 5%;
+  text-align: center;
+}
+
+.project-grid {
+  width: 80vw;
+  height: 85vh;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -webkit-column-gap: 2px;
+          column-gap: 2px;
+  row-gap: 2px;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: relative;
+  top: -230px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: #7510f7;
+}
+
+.project-item:hover
+.overlay {
+  opacity: 1;
 }
 
 .subhead {

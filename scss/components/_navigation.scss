@@ -1,0 +1,15 @@
+.navbar {
+    background-color: white;
+    width: 100%;
+    padding: 18px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+    border-top: 4px solid $link-color;
+  }
+  
+  .nav-item:nth-child(1){
+    margin-left: 30%;
+  }

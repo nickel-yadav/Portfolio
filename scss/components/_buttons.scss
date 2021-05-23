@@ -1,0 +1,13 @@
+.btn {
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background: $link-color;
+    color: white;
+    @include easeOut;
+  }
+  
+  .btn:hover {
+    background-color: #5a8110;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  }

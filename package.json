@@ -10,5 +10,13 @@
   "license": "MIT",
   "dependencies": {
     "node-sass": "^5.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickel-yadav/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nickel-yadav/Portfolio/issues"
+  },
+  "homepage": "https://github.com/nickel-yadav/Portfolio#readme"
 }

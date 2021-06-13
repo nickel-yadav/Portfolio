@@ -18,34 +18,45 @@
         <img src="/resources/preloader.gif" alt="preloader">
       </div>     
       <nav class="navbar">
-          <ul class="links-container">
-            <li class="nav-item">
-              <a href="#home"><img src="./img/logo.png" alt="website logo" class="logo"></a>
-            </li>
-            <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item current">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="btn">Resume</a>
-            </li>
-            <li class="nav-item">
-              <button class="nav-toggle">
-                <i class="far fa-bars"></i>
-              </button>
-            </li>
-          </ul>
+        <div class="nav-logo">
+          <a href="#home"><img class="logo" src="./img/logo.png" alt="website logo"></a>
+        </div>
+        <ul class="links-container">
+          <li class="link-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="link-item current">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="link-item">
+            <a class="nav-link" href="portfolio.html">Portfolio </a>
+          </li>
+          <li class="link-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="link-item">
+            <a class="nav-link" href="contact.html">Contact </a>
+          </li> 
+          <li class="link-item">
+            <ul class="social">
+              <li>
+                <a href="https://twitter.com/nickelyadev">
+                  <i class="fab fa-twitter fa-2x fa-cog"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/nikhil-yadav-6174k/">
+                  <i class="fab fa-linkedin fa-2x fa-cog"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/nickel-yadav">
+                  <i class="fab fa-github fa-2x fa-cog"></i>
+                </a>
+              </li>
+            </ul>             
+          </li>              
+        </ul>     
       </nav>
     </header>
     <main>
@@ -127,37 +138,29 @@
         </div>
       </section>        
       <section class="projects">
-        <div class="project-container">
-          <h1>My projects</h1>
-          <h2>Here are a few projects I've built from scratch. Want to see more? <a href="">Here's Github</a></h2>
-          <ul class="grid">
-            <li class="item">
-              <a href="#">
-                <img src="/resources/micro-projects/3-column-preview-card-component-main/design/thumbnail.jpg" alt="">
-                <span class="description">Preview card</span>
-              </a>
-            </li>
-            
-               
-          </ul> 
-        </div>
+        <h1>Some of my latest work</h1>
+        <ul class="project-container">
+          <li class="project">
+            <a href="#">
+              <img class="thumbnail" src="./img/thumbnail.jpg" alt="3 card component design">
+              <p>Card component</p>
+            </a>
+          </li>
+          <li class="project">
+            <a href="#">
+              <img class="thumbnail" src="https://images.unsplash.com/photo-1477579266593-ccd7841e4f02?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8YWV1NnJMLWo2ZXd8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="3 card component design">
+              <p>Card component</p>
+            </a>
+          </li>
+          <li class="project">
+            <a href="#">
+              <img class="thumbnail" src="https://images.unsplash.com/photo-1527245592484-dff09c8e4cd9?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8cm5TS0RId3dZVWt8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="3 card component design">
+              <p>Card component</p>
+            </a>
+          </li>
+        </ul> 
       </section> 
     </main>
-   
-    <footer>
-      <div class="icons">
-        <a href="https://twitter.com/nickelyadev">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/nikhil-yadav-6174k/">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a href="https://github.com/nickel-yadav">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
-      </div>
-    </footer>
-
     <script src="js/app.js"></script>
   </body>
 </html>

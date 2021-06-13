@@ -11,6 +11,16 @@
 //-------------Responsive-------//
 @import "./helpers/mobile";
 
+//-------------Footer-----------//
+@import "./layout/footer";
+
+//-------------Forms------------//
+@import "./layout/forms";
+
+//--------------Header----------//
+@import "./layout/header";
+
+
 *,
 *:before, 
 *:after {
@@ -43,7 +53,6 @@ textarea {
 }
 
 a {
-  color: $link-color ;
   text-decoration: none;
   font-weight: 400;
 }
@@ -107,7 +116,7 @@ ul {
 
 .stack-container {
   width: 84vw;
-  height: 120vh;
+  height: 100vh;
   margin-left: 5rem;
   display: flex;
   border: 2px solid white;
@@ -141,54 +150,69 @@ ul {
 
 //-------------------------Projects---------------------//
 
-.project-container {
-  padding: 5%;
-  text-align: center;
-  margin-top: 3em;
-}
 
-.grid {
-  width: 80vw;
-  height: 85vh;
-  margin: 0 auto;
-  margin-top: 5rem;
-}
-
-.project-image {
-  display: block;
-  max-width: 100%;
+.projects {
+  padding: 2%;
   width: 100%;
-  object-fit: cover;
-}
-
-.item {
-  padding: 0.5rem 0.2rem;
-  border: 1px solid black;
-  border-radius: 12px;
-}
-
-.description {
-  font-family: "Unica One", sans-serif;
-  font-size: 1.25rem;
-  position: absolute;
-  display: block;
-  right: 2rem;
-  left: 2rem;
+  height: 100vh;
   text-align: center;
-  top: 50%;
-  width: 60px;
-  margin: auto;
-  color: white;
-  z-index: 100;
-  opacity: 0;
-  transform: translate3d(0, -50%, 0);
-  transition: .3s 0s;
+  margin-top: 1em;
 }
 
-.item:hover .description {
-  opacity: 1; 
-  transition: .6s .3s;
+.project-container {
+  width: 65em;
+  height: 20em;
+  padding: 2em;
+  // border: 1px solid black;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .project {
+    width: 300px;
+  }
 }
+
+.thumbnail {
+  width: 15em;
+}
+
+// .project-image {
+//   display: block;
+//   max-width: 100%;
+//   width: 100%;
+//   object-fit: cover;
+// }
+
+// .item {
+//   padding: 0.5rem 0.2rem;
+//   border: 1px solid black;
+//   border-radius: 12px;
+// }
+
+// .description {
+//   font-family: "Unica One", sans-serif;
+//   font-size: 1.25rem;
+//   position: absolute;
+//   display: block;
+//   right: 2rem;
+//   left: 2rem;
+//   text-align: center;
+//   top: 50%;
+//   width: 60px;
+//   margin: auto;
+//   color: white;
+//   z-index: 100;
+//   opacity: 0;
+//   transform: translate3d(0, -50%, 0);
+//   transition: .3s 0s;
+// }
+
+// .item:hover .description {
+//   opacity: 1; 
+//   transition: .6s .3s;
+// }
 
 // .overlay {
 //   position: relative;
@@ -208,14 +232,6 @@ ul {
 
 .subhead {
   padding-bottom: 0rem;
-}
-
-.icon {
-  padding: 2rem 1rem 2rem 1rem;
-}
-
-.fa-cog {
-  color: $primary-color;
 }
 
 .is-primary {

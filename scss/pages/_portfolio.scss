@@ -1,0 +1,35 @@
+.portfolio {
+    width: 100%;
+    height: 100vh;
+}
+
+.miniskills {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding: 2em;
+    position: relative;
+    top: 10%;
+}
+
+.tabs {
+    width: 50em;
+    margin: auto;
+}
+
+.category {
+    padding: 1em;
+}
+
+.tab {
+    padding: 0.5em;
+    margin: 1%;
+    border: none;
+    background-color: white;
+    border-bottom: 2px double black;
+    font-size: 1.2em;
+}
+
+.tech {
+    padding-bottom: 1em;
+}

@@ -20,6 +20,8 @@
 //--------------Header----------//
 @import "./layout/header";
 
+//------------Portfolio-----------//
+@import "./pages/portfolio";
 
 *,
 *:before, 
@@ -85,7 +87,7 @@ ul {
 
 //-------------------Hero Section-----------------//
 
-.hero-section {
+.hero{
   width: 100vw;
   height: 130vh;
   background: $secondary-color;
@@ -107,6 +109,10 @@ ul {
   }
 }
 
+.intro {
+  text-align: center;
+  color: white;
+}
 //-----------------------Technology Stack ----------------------//
 
 .stack {

@@ -69,7 +69,6 @@
 
 .footer {
   width: 100%;
-  height: 40%;
   background-color: black;
   color: white;
 }
@@ -132,18 +131,17 @@ header {
   background-color: black;
 }
 
-.portfolio {
+img {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
 }
 
-.miniskills {
-  margin: auto;
-  width: 80%;
-  text-align: center;
-  padding: 2em;
-  position: relative;
-  top: 10%;
+.portfolio {
+  width: 100%;
 }
 
 .tabs {
@@ -166,6 +164,92 @@ header {
 
 .tech {
   padding-bottom: 1em;
+}
+
+.miniskills {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  padding: 2em;
+  position: relative;
+  top: 10%;
+}
+
+.miniskills .container {
+  width: 65em;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+
+.card {
+  color: white;
+  border-radius: 12px;
+  position: relative;
+  height: 19rem;
+  overflow-y: hidden;
+  -webkit-box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0;
+  display: block;
+  background-color: #5885AF;
+  padding: 1rem;
+}
+
+.card a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.card a:hover ~ .card_overlay, .card a:focus ~ .card_overlay {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.card_overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+  background-color: #8cabc8;
+  -webkit-transform: translate3d(0, calc(50% - 3.5rem), 0);
+          transform: translate3d(0, calc(50% - 3.5rem), 0);
+}
+
+.card_body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 1rem;
+}
+
+.card_body p {
+  margin: 0;
 }
 
 *,
@@ -227,7 +311,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   visibility: visible;
-  z-index: 999;
+  z-index: 3;
 }
 
 .hide-preloader {

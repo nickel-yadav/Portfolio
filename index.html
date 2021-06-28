@@ -1,4 +1,4 @@
-<html lang="en">
+  <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,64 +17,78 @@
       <div class="preloader">
         <img src="/resources/preloader.gif" alt="preloader">
       </div>     
-      <nav class="navbar">
-        <div class="nav-logo">
-          <a href="index.html"><img class="logo" src="./img/logo.png" alt="website logo"></a>
+      <nav class="navbar" role="navigation">
+        <div class="hamburger">
+          <div id="menuToggle">
+            <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+          <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+         </div>
         </div>
-        <ul class="links-container">
-          <li class="link-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="link-item current">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="link-item">
-            <a class="nav-link" href="portfolio.html">Portfolio </a>
-          </li>
-          <li class="link-item">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li>
-          <li class="link-item">
-            <a class="nav-link" href="contact.html">Contact </a>
-          </li> 
-          <li class="link-item">
-            <ul class="social">
-              <li>
-                <a href="https://twitter.com/nickelyadev">
-                  <i class="fab fa-twitter fa-2x fa-cog"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/nikhil-yadav-6174k/">
-                  <i class="fab fa-linkedin fa-2x fa-cog"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/nickel-yadav">
-                  <i class="fab fa-github fa-2x fa-cog"></i>
-                </a>
-              </li>
-            </ul>             
-          </li>              
-        </ul>     
+        <div class="full-width">
+          <div class="nav-logo">
+            <a href="index.html"><img class="logo" src="./img/logo.png" alt="website logo"></a>
+          </div>
+          <ul class="links-container">
+            <li class="link-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="link-item current">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="link-item">
+              <a class="nav-link" href="portfolio.html">Portfolio </a>
+            </li>
+            <li class="link-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="link-item">
+              <a class="nav-link" href="contact.html">Contact </a>
+            </li> 
+            <li class="link-item">
+              <ul class="social">
+                <li>
+                  <a href="https://twitter.com/nickelyadev">
+                    <i class="fab fa-twitter fa-2x fa-cog"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/nikhil-yadav-6174k/">
+                    <i class="fab fa-linkedin fa-2x fa-cog"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/nickel-yadav">
+                    <i class="fab fa-github fa-2x fa-cog"></i>
+                  </a>
+                </li>
+              </ul>             
+            </li>              
+          </ul>  
+        </div>    
       </nav>
     </header>
     <main>
       <section class="hero">
+        <div class="hero-bg">
+          <div class="stars">
+             <div class="small"></div>
+             <div class="medium"></div>
+             <div class="big"></div>
+           </div>
+        </div>
         <div class="hero-content">
           <h1>Hello,</h1>
           <h2>I'm Nikhil - A software engineer, building cool stuff <br>
           with engaging design.</h2>
-        </div> 
-        <div class="intro">
-          <h1>Hi, I'm Nikhil.</h1>
-          <p>
-            I create the websites and then make em <br>
-            razzle dazzle, that makes your brand pop. <br>
-            The entire multipage is a thing of the past <br>
-            get ready to experience modularity and soph.
-          </p>
-        </div>       
+        </div>     
       </section>
       
       <section class="stack">
@@ -147,27 +161,38 @@
         </div>
       </section>        
       <section class="projects">
-        <h1>Some of my latest work</h1>
-        <ul class="project-container">
-          <li class="project">
-            <a href="#" class="tile">
-              <img class="thumbnail" src="./img/thumbnail.jpg" alt="3 card component design">
-              <p>Card component</p>
-            </a>
-          </li>
-          <li class="project">
-            <a href="#" class="tile">
-              <img class="thumbnail" src="https://images.unsplash.com/photo-1477579266593-ccd7841e4f02?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8YWV1NnJMLWo2ZXd8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="3 card component design">
-              <p>Card component</p>
-            </a>
-          </li>
-          <li class="project">
-            <a href="#" class="tile">
-              <img class="thumbnail" src="https://images.unsplash.com/photo-1527245592484-dff09c8e4cd9?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8cm5TS0RId3dZVWt8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="3 card component design">
-              <p>Card component</p>
-            </a>
-          </li>
-        </ul> 
+        <div class="container">
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <h2>01</h2>
+                <h3>Card One</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <h2>02</h2>
+                <h3>Card Two</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <h2>Mom</h2>
+                <h3>Card Three</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section> 
     </main>
     <footer class="footer">

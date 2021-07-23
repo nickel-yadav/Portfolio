@@ -1,0 +1,170 @@
+
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+/* ==================== Navbar ===================== */
+
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 0px 45px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.logo-img {
+  width: 80px;
+  height: 80px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+@media(max-width: 786px) {
+
+  .logo {
+        position: fixed;
+        top: 0;
+        left: 0;
+  }
+
+  .logo-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  nav ul {
+        max-height: 0px;
+        background: #000;
+  }
+
+  nav.black ul {
+        background: #000;
+  }
+
+  .showing {
+        max-height: 34em;
+  }
+
+  nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+  }
+
+  .menu-icon {
+        display: block;
+  }
+
+}
+
+/* ===================== Text ====================== */
+.open-sans {
+font-family: 'Open Sans', sans-serif;
+font-size: 1.1em;
+}
+
+
+/*=================== Footer ======================*/
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.footer-container {
+  width: 80%;
+  margin: auto;
+  padding: 2em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-box {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.item {
+  width: 10em;
+  height: 8em;
+}
+
+.item > h3:after{
+  content: "";
+  display: block;
+  width: 8em;
+  height: 1px;
+  background-color: white;
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.fa-cog {
+  color: white;
+}
+
+

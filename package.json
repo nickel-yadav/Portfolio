@@ -1,22 +1,25 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Portfolio Website",
+  "description": "Welcome to my portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
-  },
-  "author": "Nikhil Yadav",
-  "license": "MIT",
-  "dependencies": {
-    "node-sass": "^5.0.0"
+    "build": "eleventy",
+    "serve": "eleventy --serve"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nickel-yadav/Portfolio.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/nickel-yadav/Portfolio/issues"
   },
-  "homepage": "https://github.com/nickel-yadav/Portfolio#readme"
+  "homepage": "https://github.com/nickel-yadav/Portfolio#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "debug": "^4.3.2"
+  }
 }

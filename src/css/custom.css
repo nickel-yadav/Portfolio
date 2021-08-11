@@ -129,8 +129,8 @@ nav ul li a:hover {
 }
 
 .wrapper {
-  padding: 100px;
-  width: 500px;
+  padding: 0px;
+  width: 20em;
   display: block;
   text-align: center;
   margin: 0 auto;
